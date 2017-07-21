@@ -7,6 +7,6 @@
 <title>spring mvc</title>
 </head>
 <body>
-<a href="login.jsp">登录</a>
+sdsd
 </body>
 </html>

@@ -16,7 +16,7 @@
 		</tr>
 		<tr>
 			<td>密码:</td>
-			<td><form:input path="username"/> </td>
+			<td><form:password path="password"/> </td>
 		</tr>
 	</table>
 </form:form>
