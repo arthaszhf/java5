@@ -2,6 +2,12 @@ package com.arthas.czmsy.entity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
 * 
 * @ClassName: TeacherWage 
@@ -10,29 +16,42 @@ import java.util.Date;
 * @date 2017年7月31日 下午11:43:43 
 *
 */
-
+@Entity
+@Table(name="teacherwage")
 public class TeacherWage {
 	// id
+	@Id
+	@GeneratedValue
 	private int id;
 	// 工资月份
+	@Column(name="teacherwage_wagedate")
 	private Date wageDate;
 	// 基本工资
+	@Column(name="teacherwage_basicwage")
 	private long basicWage;
 	//上的课时数
+	@Column(name="teacherwage_classtimes")
 	private int classTimes;
 	//样课
+	@Column(name="teacherwage_democlasstimes")
 	private int demoClassTimes;
 	// 课耗绩效
+	@Column(name="teacherwage_timesoutperformance")
 	private double timesOutPerformance;
 	// 满班绩效
+	@Column(name="teacherwage_fullclassperformance")
 	private double fullClassPerformance;
 	// 教学服务绩效
+	@Column(name="teacherwage_serviceperformance")
 	private double servicePerformance;
 	// 续费/转介绍
+	@Column(name="teacherwage_renew")
 	private int renew;
 	// 阶段奖励
+	@Column(name="teacherwage_award")
 	private int award;
 	// 退费学生个数（负激励）
+	@Column(name="teacherwage_refundtimes")
 	private int refundTimes;
 
 	/**

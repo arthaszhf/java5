@@ -2,6 +2,14 @@ package com.arthas.czmsy.entity;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 /**
  * 
 * @ClassName: ResourceType 
@@ -10,13 +18,18 @@ import java.util.Set;
 * @date 2017年8月2日 下午2:09:02 
 *
  */
-
+@Entity
+@Table(name="resourcetype")
 public class ResourceType {
 	//id
+	@Id
+	@GeneratedValue
 	private int id;
 	//类型名
+	@Column(name="resourcetype_name")
 	private String resourceTypeName;
 	//与资源一对多关系
+	@OneToMany(fetch=FetchType.LAZY)
 	private Set<Resource> resourceSet = new HashSet<Resource>();
 	
 	/**
