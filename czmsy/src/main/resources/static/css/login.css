@@ -1,0 +1,7 @@
+body{ background-image: url(../images/2.jpg);}
+.login-all{ width: 500px; margin: auto;}
+.login{ width: 400px; height: 200px; margin: auto; border-radius: 5px; background-color: rgba(255,255,255,.5);}
+.login-input{ width: 300px; margin: auto; padding-top: 20px;}
+.login-input input{ width: 260px; height: 26px; padding-left: 14px; margin-left: 10px; margin-top: 20px; border: solid 1px #CCC;}
+.login-input input:last-child{ width: 278px; border: solid 1px #CCC;/*padding: 0; float: right; margin-right: 10px;*/}
+
